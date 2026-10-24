@@ -1,0 +1,927 @@
+{
+  "_meta": {
+    "generated_at": "2026-10-09T13:50:00Z",
+    "major": "Génie Informatique (SMI)",
+    "university": "Faculté des Sciences — Maroc",
+    "source_folders": {
+      "S3": "https://drive.google.com/drive/folders/1Uydpe13HG_HekDJ436jj66D62wkoVlUo",
+      "S4": "https://drive.google.com/drive/folders/1up_Ht85GujXL2CH03dM1kUAWVAAw8CKi",
+      "S5": "https://drive.google.com/drive/folders/1ji08TCdWwlndE5KvB6VqircU26ZLwNim",
+      "S6": "https://drive.google.com/drive/folders/1lHZJ7BlH6rSpCI6tcpmrqGf-p7WjlTJN"
+    },
+    "root_folder_ids": {
+      "S3": "1Uydpe13HG_HekDJ436jj66D62wkoVlUo",
+      "S4": "1up_Ht85GujXL2CH03dM1kUAWVAAw8CKi",
+      "S5": "1ji08TCdWwlndE5KvB6VqircU26ZLwNim",
+      "S6": "1lHZJ7BlH6rSpCI6tcpmrqGf-p7WjlTJN"
+    },
+    "confirmed_titles": {
+      "S3": "SMI3 — SMI 3 (2020-2021)",
+      "S4": "SMI4 — SMI 4 (2020-2021)",
+      "S5": "SMI5 — SMI 5 (2021-2022)",
+      "S6": "SMI6 — SMI 6 (2021-2022)"
+    },
+    "note": "Individual drive_file_id values marked FILE_ID_* are placeholder templates. Replace with real Google Drive file IDs obtained from an authenticated folder crawl. All embed_url and download_url patterns are correctly formatted and will resolve once real IDs are substituted."
+  },
+
+  "modules_metadata": [
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "module_name": "Algorithmique et Structures de Données (ASD)",
+      "prerequisites": ["Programmation de base", "Mathématiques discrètes"],
+      "description": "Ce module est l'un des piliers fondamentaux de la formation en Génie Informatique. Il couvre les algorithmes classiques de tri (bulles, insertion, fusion, rapide), la complexité temporelle (notation Big-O), et les structures de données linéaires et non-linéaires : tableaux, listes chaînées simples et doublement chaînées, piles (LIFO) et files (FIFO). Les étudiants apprennent à implémenter et analyser ces structures en langage C ou Java. Les arbres binaires, arbres de recherche binaire (BST), et les tables de hachage sont également abordés. Pour réussir les examens, il faut maîtriser l'implémentation des piles avec tableaux et pointeurs, et savoir calculer la complexité d'un algorithme récursif. Conseil aux étudiants marocains : exercez-vous quotidiennement sur des problèmes de LeetCode en arabe ou français pour solidifier vos bases avant la session.",
+      "key_exam_topics": [
+        "Implémentation des Piles et Files (tableaux vs pointeurs)",
+        "Tris comparatifs : complexité et trace d'exécution",
+        "Arbres Binaires de Recherche (BST) : insertion, suppression, parcours",
+        "Listes chaînées : inversion, détection de cycle",
+        "Calcul de complexité Big-O"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "module_name": "Prog I (Langage C)",
+      "prerequisites": ["Initiation à l'informatique"],
+      "description": "Le module Programmation I en Langage C constitue la première immersion profonde dans un langage système pour les étudiants de SMI3. On y apprend la syntaxe C, les types primitifs, les opérateurs, les structures de contrôle (if/else, for, while, do-while, switch), et les fonctions. La gestion de la mémoire dynamique via malloc(), calloc(), realloc() et free() est centrale : comprendre le tas (heap) et la pile (stack) est indispensable pour éviter les fuites mémoire. Les pointeurs, arithmétique des pointeurs, et les tableaux multidimensionnels sont traités en profondeur. La manipulation des fichiers texte et binaires (fopen, fread, fprintf) figure également au programme. Côté examen, les exercices portent souvent sur l'implémentation d'une liste chaînée, d'une pile ou d'un arbre binaire en C pur. Conseil : lisez systématiquement les erreurs de segmentation avec GDB pour développer vos réflexes de débogage.",
+      "key_exam_topics": [
+        "Pointeurs et allocation dynamique (malloc/free)",
+        "Manipulation de fichiers texte et binaires",
+        "Implémentation de listes chaînées en C",
+        "Fonctions récursives et passage par référence",
+        "Structures (struct) et unions"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "module_name": "Systèmes d'Exploitation (SE)",
+      "prerequisites": ["Architecture des ordinateurs", "Algorithmique S2"],
+      "description": "Ce module introduit les concepts fondamentaux des systèmes d'exploitation modernes. Les étudiants étudient la gestion des processus (création, ordonnancement FCFS, SJF, Round Robin, priorités), la synchronisation (sémaphores, moniteurs, problème producteur-consommateur), et la gestion de la mémoire (pagination, segmentation, mémoire virtuelle). Les concepts de deadlock (détection, prévention, évitement par algorithme du banquier) sont traités en détail. La gestion des fichiers (systèmes de fichiers FAT, ext4, inodes) et la communication inter-processus (pipes, signaux, mémoire partagée) complètent le programme. Sous Linux/Unix, les appels système fork(), exec(), wait() et les signaux SIGKILL/SIGTERM sont pratiqués en TP. Pour les examens marocains, les exercices d'ordonnancement avec diagramme de Gantt et les calculs de taux d'utilisation CPU sont systématiquement posés. Maîtrisez l'algorithme du banquier pour l'évitement des deadlocks.",
+      "key_exam_topics": [
+        "Ordonnancement CPU : FCFS, SJF, Round Robin, Priorités (diagramme de Gantt)",
+        "Algorithme du banquier (évitement des deadlocks)",
+        "Pagination et calcul d'adresse physique",
+        "Synchronisation : sémaphores et problème producteur-consommateur",
+        "Appels système Unix : fork(), exec(), pipe()"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "module_name": "Mathématiques pour l'Informatique (Logique & Graphes)",
+      "prerequisites": ["Algèbre S1", "Analyse S2"],
+      "description": "Ce module couvre deux grands axes mathématiques essentiels à l'informatique théorique. La logique propositionnelle et du premier ordre est étudiée : tables de vérité, formes normales conjonctives (FNC) et disjonctives (FND), résolution, et introduction à la logique de prédicats. La théorie des graphes constitue la deuxième partie majeure : représentations (matrice d'adjacence, listes d'adjacence), parcours en largeur (BFS) et profondeur (DFS), plus court chemin (Dijkstra, Bellman-Ford), arbres couvrants minimaux (Prim, Kruskal), et graphes orientés (DAGs, détection de cycles). Des applications directes à la compilation (automates), aux réseaux, et à l'intelligence artificielle sont présentées. Pour les étudiants marocains, les exercices d'examen portent souvent sur l'exécution manuelle de Dijkstra ou Kruskal sur un graphe pondéré. Entraînez-vous à dérouler ces algorithmes étape par étape sur papier.",
+      "key_exam_topics": [
+        "Tables de vérité et simplification (Karnaugh)",
+        "Parcours BFS et DFS avec tableau d'état",
+        "Algorithme de Dijkstra : déroulé pas-à-pas",
+        "Arbre couvrant minimal : Prim et Kruskal",
+        "Détection de cycles dans un graphe orienté"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "module_name": "Architecture des Ordinateurs",
+      "prerequisites": ["Électronique numérique S1"],
+      "description": "Le module Architecture des Ordinateurs S3 approfondit les bases vues en première année. On étudie l'organisation interne d'un processeur : unité arithmétique et logique (ALU), registres, unité de contrôle, et le pipeline d'instructions (fetch-decode-execute). La hiérarchie mémoire est analysée en détail : registres, caches L1/L2/L3, RAM, et mémoire secondaire, avec les mécanismes de cohérence de cache. L'assembleur (x86 ou MIPS selon l'établissement) est introduit pour comprendre les instructions machine, les modes d'adressage, et la gestion de la pile d'appel. Les bus système, les interruptions matérielles, et les entrées/sorties (DMA, polling, interruptions) complètent le programme. Conseil pratique : utilisez des simulateurs comme MARS (MIPS) ou emu8086 pour visualiser l'exécution des instructions assembleur, c'est indispensable pour réussir les TP et les examens pratiques.",
+      "key_exam_topics": [
+        "Pipeline CPU : stalls, dépendances et forwarding",
+        "Calcul de performance : CPI, MIPS, temps d'exécution",
+        "Hiérarchie mémoire : taux de succès cache, temps d'accès moyen",
+        "Assembleur MIPS/x86 : lecture et écriture de programmes simples",
+        "Modes d'adressage : immédiat, registre, mémoire indirect"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "module_name": "Bases de Données (BD)",
+      "prerequisites": ["Algorithmique S3", "Modélisation UML"],
+      "description": "Le module Bases de Données est l'un des plus importants de la filière GI. Il couvre la conception de bases de données relationnelles via le modèle Entité-Association (E/A) et sa traduction en schéma relationnel normalisé (1FN, 2FN, 3FN, BCNF). Le langage SQL est enseigné de façon approfondie : DDL (CREATE, ALTER, DROP), DML (SELECT avec JOIN, GROUP BY, HAVING, sous-requêtes corrélées), et les contraintes d'intégrité. La partie PL/SQL (procédures stockées, fonctions, triggers, curseurs) est souvent l'élément différenciateur aux examens. Les étudiants apprennent également les transactions (COMMIT, ROLLBACK, niveaux d'isolation) et les index. Pour les examens marocains, les exercices portent sur la normalisation d'un schéma, l'écriture de requêtes SQL complexes, et l'implémentation d'un trigger PL/SQL. Pratiquez avec Oracle XE ou MySQL en local pour maîtriser la syntaxe.",
+      "key_exam_topics": [
+        "Modèle E/A vers schéma relationnel",
+        "Normalisation : 1FN, 2FN, 3FN, BCNF",
+        "Requêtes SQL avancées : JOIN, sous-requêtes, GROUP BY",
+        "PL/SQL : procédures stockées, fonctions, triggers",
+        "Transactions : ACID, niveaux d'isolation, verrous"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "module_name": "Programmation Orientée Objet (POO — Java)",
+      "prerequisites": ["Prog I Langage C", "ASD S3"],
+      "description": "Ce module introduit le paradigme de programmation orientée objet à travers le langage Java. Les quatre piliers — encapsulation, héritage, polymorphisme et abstraction — sont enseignés progressivement. Les classes, objets, constructeurs, méthodes, et la gestion de la visibilité (public, private, protected) constituent les bases. L'héritage simple et le polymorphisme (surcharge, redéfinition) sont pratiqués intensivement. Les interfaces et les classes abstraites permettent de concevoir des architectures flexibles. La gestion des exceptions (try-catch-finally, exceptions personnalisées) et les collections Java (ArrayList, HashMap, LinkedList) complètent le programme. Les entrées/sorties (java.io) et une introduction aux threads sont parfois incluses. Pour réussir les examens, maîtrisez les diagrammes de classes UML et leur implémentation directe en Java. Codez chaque TP dans un IDE comme Eclipse ou IntelliJ pour bénéficier de l'autocomplétion et du débogueur.",
+      "key_exam_topics": [
+        "Héritage et polymorphisme : redéfinition de méthodes",
+        "Interfaces vs classes abstraites : quand utiliser chacune",
+        "Collections Java : ArrayList, HashMap, Iterator",
+        "Gestion des exceptions : hiérarchie et exceptions personnalisées",
+        "Diagrammes de classes UML vers code Java"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "module_name": "Réseaux Informatiques",
+      "prerequisites": ["Systèmes d'Exploitation S3", "Architecture des Ordinateurs"],
+      "description": "Le module Réseaux Informatiques présente les principes de communication entre machines à travers le modèle OSI (7 couches) et le modèle TCP/IP (4 couches). La couche physique (codage Manchester, NRZ), la couche liaison de données (protocoles HDLC, CSMA/CD, Ethernet), et la couche réseau (adressage IP, sous-réseaux CIDR, routage RIP, OSPF) sont détaillées. La couche transport distingue TCP (connexion orientée, contrôle de flux et congestion) et UDP (datagramme). Les protocoles applicatifs HTTP, DNS, DHCP, FTP et SMTP sont étudiés. Les TP portent sur la configuration de Packet Tracer (Cisco) : VLAN, routage statique et dynamique, NAT. Pour les examens, maîtrisez le calcul de sous-réseaux (masques CIDR), la différence entre commutateurs et routeurs, et le handshake TCP à 3 voies. Pratiquez les calculs de sous-réseaux jusqu'à les faire en moins de 2 minutes.",
+      "key_exam_topics": [
+        "Modèle OSI et TCP/IP : rôle de chaque couche",
+        "Adressage IP et calcul de sous-réseaux (CIDR)",
+        "Protocoles TCP vs UDP : différences et cas d'utilisation",
+        "Routage : RIP, OSPF, routage statique",
+        "Configuration Cisco Packet Tracer : VLAN, NAT, DHCP"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "module_name": "Théorie des Langages et Compilation (TLC)",
+      "prerequisites": ["Logique et Graphes S3", "Algorithmique S3"],
+      "description": "Ce module fondamental traite de la théorie formelle des langages et de la construction des compilateurs. Les automates finis déterministes (AFD) et non-déterministes (AFND) sont introduits avec la conversion AFD↔AFND et la minimisation. Les expressions régulières et leur équivalence avec les automates finis sont démontrées. Les grammaires formelles (types 0, 1, 2, 3 selon Chomsky) et les langages hors-contexte (CFG) sont couverts, avec les automates à pile (PDA). L'analyse lexicale (flex/Lex), syntaxique (analyse descendante, remontante, parseurs LALR), et sémantique des compilateurs constituent la partie pratique. Le module se conclut souvent par la génération de code intermédiaire. Pour les examens, pratiquez la construction d'un AFD depuis une expression régulière, et déroulez un analyseur syntaxique LL(1) sur une grammaire. Ces exercices sont systématiquement posés au contrôle final.",
+      "key_exam_topics": [
+        "Construction d'AFD depuis une expression régulière",
+        "Conversion AFND → AFD (déterminisation)",
+        "Grammaires hors-contexte (CFG) et arbres de dérivation",
+        "Analyse syntaxique LL(1) : tables de prédiction",
+        "Automates à pile (PDA) : reconnaissance de langages CFG"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "module_name": "Analyse Numérique",
+      "prerequisites": ["Algèbre linéaire S2", "Analyse mathématique S2"],
+      "description": "L'Analyse Numérique en S4 traite des méthodes algorithmiques pour résoudre des problèmes mathématiques continus. La résolution d'équations non-linéaires par les méthodes de bisection (dichotomie), Newton-Raphson, et la méthode de la sécante est étudiée, avec les critères de convergence. La résolution de systèmes linéaires utilise l'élimination de Gauss, la factorisation LU, et les méthodes itératives (Jacobi, Gauss-Seidel). L'interpolation polynomiale (Lagrange, Newton avec différences divisées) et l'approximation par moindres carrés permettent de modéliser des données. L'intégration numérique (méthode des trapèzes, Simpson 1/3 et 3/8, Gauss) et la résolution d'EDO (méthode d'Euler, Runge-Kutta d'ordre 4) complètent le programme. Pour les examens marocains de ce module, la précision des calculs numériques et la démonstration de convergence sont les points différenciateurs. Implémentez ces méthodes en Python/Octave pour vérifier vos calculs.",
+      "key_exam_topics": [
+        "Méthode de Newton-Raphson : convergence et calcul",
+        "Élimination de Gauss et factorisation LU",
+        "Interpolation de Lagrange et de Newton",
+        "Intégration numérique : Simpson, trapèzes (erreurs)",
+        "Méthode de Runge-Kutta RK4 pour les EDO"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "module_name": "Technologie Web (TechnoWeb)",
+      "prerequisites": ["POO Java S4", "Bases de Données S4", "Réseaux S4"],
+      "description": "Le module Technologie Web forme les étudiants au développement d'applications web complètes. Côté client, HTML5 et CSS3 sont maîtrisés (flexbox, grid, responsive design, media queries). JavaScript ES6+ est enseigné en profondeur : manipulation du DOM, événements, fetch API, promesses, async/await. Un framework JavaScript (Vue.js ou React selon l'établissement) peut être introduit. Côté serveur, PHP avec MySQL (PDO, requêtes préparées) ou Node.js est utilisé pour créer des APIs REST. La sécurité web est abordée : injections SQL, XSS, CSRF, et bonnes pratiques (validation côté serveur, HTTPS). Les sessions et cookies, l'authentification (JWT, sessions PHP), et le déploiement sur serveur Apache/Nginx complètent le programme. Pour les examens, sachez créer une application CRUD complète, écrire des requêtes AJAX, et expliquer les vulnérabilités XSS/SQL Injection avec leurs parades. Pratiquez avec XAMPP ou Docker localement.",
+      "key_exam_topics": [
+        "HTML5/CSS3 : mise en page responsive (flexbox/grid)",
+        "JavaScript DOM : manipulation, événements, AJAX/fetch",
+        "PHP : sessions, cookies, connexion PDO à MySQL",
+        "REST API : conception et consommation avec JavaScript",
+        "Sécurité web : SQL Injection, XSS, CSRF et prévention"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "module_name": "Intelligence Artificielle (IA)",
+      "prerequisites": ["Algorithmique S3", "Probabilités et Statistiques S4"],
+      "description": "Ce module introduit les fondements de l'intelligence artificielle classique et moderne. La recherche heuristique est couverte avec les algorithmes A*, BFS, DFS, et le minimax pour les jeux. La représentation des connaissances (logique des prédicats, réseaux sémantiques, frames) et les systèmes experts sont présentés. L'apprentissage automatique (machine learning) introduit la régression linéaire et logistique, les arbres de décision (ID3, C4.5), les k-plus proches voisins (k-NN), les SVM, et le clustering (k-means). Les réseaux de neurones artificiels (perceptron multicouche, rétropropagation) constituent une introduction au deep learning. La validation croisée et les métriques d'évaluation (précision, rappel, F1-score, courbe ROC) sont enseignées. Pour les examens, sachez dérouler A* sur un graphe, construire un arbre de décision ID3, et calculer les poids d'un réseau de neurones par rétropropagation. Utilisez scikit-learn et NumPy pour les TP.",
+      "key_exam_topics": [
+        "Algorithme A* : admissibilité de l'heuristique et déroulé",
+        "Arbre de décision ID3 : calcul de l'entropie et gain d'information",
+        "Régression logistique : fonction sigmoïde, descente de gradient",
+        "Rétropropagation du gradient dans un réseau de neurones",
+        "Évaluation de modèles : matrice de confusion, F1-score"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "module_name": "Génie Logiciel (GL)",
+      "prerequisites": ["POO Java S4", "Bases de Données S4"],
+      "description": "Le Génie Logiciel forme les étudiants aux méthodologies et outils de développement professionnel de logiciels. Les modèles de cycle de vie (cascade, V, itératif, agile Scrum/Kanban) sont comparés et leurs contextes d'application explicités. La modélisation UML avancée couvre les diagrammes de cas d'utilisation, de classes, de séquences, d'activités, et d'états-transitions. Les patterns de conception (design patterns) GoF sont étudiés : Singleton, Factory, Observer, Strategy, MVC. Les tests logiciels (unitaires avec JUnit, intégration, système, TDD) et la gestion de configuration (Git, branches, merge, CI/CD) sont pratiqués. La gestion de projet (estimation, WBS, diagramme de Gantt) clôt le programme. Pour les examens marocains, les exercices portent sur la modélisation UML d'un système donné, l'identification des patterns adaptés, et la rédaction de cas de test. Maîtrisez au moins cinq patterns GoF avec leurs diagrammes UML.",
+      "key_exam_topics": [
+        "Diagrammes UML : cas d'utilisation, classes, séquences",
+        "Design Patterns GoF : Singleton, Factory, Observer, Strategy",
+        "Architecture MVC : séparation des responsabilités",
+        "Tests unitaires avec JUnit : mocks, assertions, TDD",
+        "Méthodes Agile : Scrum, sprints, user stories, velocity"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "module_name": "Probabilités et Statistiques pour l'Informatique",
+      "prerequisites": ["Analyse mathématique S2", "Algèbre S2"],
+      "description": "Ce module fournit les outils mathématiques probabilistes et statistiques indispensables à l'informaticien moderne, notamment pour le machine learning, la sécurité, et l'analyse de performances. Les espaces probabilisés, variables aléatoires discrètes et continues, lois classiques (binomiale, Poisson, normale, exponentielle) et leurs propriétés (espérance, variance, écart-type) constituent les bases. Les théorèmes limites (loi des grands nombres, théorème central limite) et les intervalles de confiance permettent l'inférence statistique. La régression linéaire simple et multiple, les tests d'hypothèses (t-test, chi-deux, ANOVA), et la corrélation de Pearson et Spearman sont enseignés. La chaîne de Markov est introduite comme modèle probabiliste séquentiel, avec ses applications aux files d'attente et à la modélisation de systèmes. Pour les examens, les calculs de loi normale standard (table Z) et les intervalles de confiance sont systématiquement demandés.",
+      "key_exam_topics": [
+        "Loi normale : standardisation Z, lecture de table",
+        "Intervalles de confiance : construction et interprétation",
+        "Tests d'hypothèses : H0, H1, p-value, niveau de signification",
+        "Régression linéaire : moindres carrés, coefficient R²",
+        "Chaînes de Markov : matrice de transition, états absorbants"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "module_name": "Sécurité Informatique",
+      "prerequisites": ["Réseaux S4", "Systèmes d'Exploitation S3", "Mathématiques (Algèbre)"],
+      "description": "Le module Sécurité Informatique couvre les fondements de la cybersécurité appliquée aux systèmes d'information. La cryptographie symétrique (AES, DES, modes opératoires CBC/CTR) et asymétrique (RSA, courbes elliptiques ECDSA, Diffie-Hellman) sont enseignées avec leur base mathématique (arithmétique modulaire, théorème d'Euler). Les fonctions de hachage (SHA-256, MD5) et les signatures numériques garantissent l'intégrité et l'authenticité. La sécurité réseau couvre les firewalls, VPN (IPSec, SSL/TLS), IDS/IPS, et les attaques classiques (Man-in-the-Middle, ARP poisoning, DDoS). La sécurité applicative (OWASP Top 10), l'analyse de malware (statique/dynamique), et la forensique numérique sont abordées. La certification PKI, les protocoles d'authentification (Kerberos, OAuth, SAML), et la politique de sécurité complètent le programme. Pour les examens, maîtrisez RSA de bout en bout (génération de clés, chiffrement, déchiffrement) et les modes opératoires de chiffrement par blocs.",
+      "key_exam_topics": [
+        "RSA : génération de clés, chiffrement et déchiffrement",
+        "AES-CBC : chiffrement par blocs et vecteur d'initialisation",
+        "Protocole SSL/TLS : handshake et certificats X.509",
+        "Attaques réseaux : MITM, ARP poisoning, DDoS",
+        "OWASP Top 10 : injections, XSS, IDOR et remédiation"
+      ]
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "module_name": "Systèmes Distribués et Cloud Computing",
+      "prerequisites": ["Réseaux S4", "Systèmes d'Exploitation S3", "Bases de Données S4"],
+      "description": "Ce module de fin de cycle traite des architectures modernes de systèmes informatiques répartis. Les paradigmes de communication distribuée (RPC, RMI Java, REST, gRPC, files de messages RabbitMQ/Kafka) sont étudiés. Le théorème CAP (Consistance, Disponibilité, Tolérance aux partitions) et les bases de données NoSQL (MongoDB, Cassandra, Redis) sont présentés en regard des SGBD relationnels. La conteneurisation avec Docker (images, conteneurs, volumes, réseaux) et l'orchestration avec Kubernetes (pods, services, deployments, ingress) constituent le cœur pratique du module. Les paradigmes cloud (IaaS, PaaS, SaaS), les fournisseurs majeurs (AWS, GCP, Azure) et leurs services fondamentaux (compute, storage, CDN, serverless) sont couverts. La programmation parallèle (OpenMP, MPI) et la tolérance aux pannes (réplication, consensus Raft/Paxos) complètent le programme. Pratiquez Docker et déployez une application sur un free tier cloud pour les TP.",
+      "key_exam_topics": [
+        "Théorème CAP : exemples de systèmes et compromis",
+        "Docker : Dockerfile, docker-compose, réseaux de conteneurs",
+        "NoSQL vs SQL : choix selon les contraintes ACID/BASE",
+        "Architecture microservices vs monolithique",
+        "Algorithme de consensus Raft : élection de leader"
+      ]
+    }
+  ],
+
+  "resources": [
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Algorithmique et Structures de Données (ASD)",
+      "category": "COUR",
+      "title": "Cours_ASD_Complet_S3.pdf",
+      "drive_file_id": "FILE_ID_S3_ASD_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ASD_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ASD_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Algorithmique et Structures de Données (ASD)",
+      "category": "TD",
+      "title": "TD_ASD_Exercices_Piles_Files.pdf",
+      "drive_file_id": "FILE_ID_S3_ASD_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ASD_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ASD_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Algorithmique et Structures de Données (ASD)",
+      "category": "TP",
+      "title": "TP_ASD_Listes_Chaines_C.pdf",
+      "drive_file_id": "FILE_ID_S3_ASD_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ASD_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ASD_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Algorithmique et Structures de Données (ASD)",
+      "category": "EXAMEN",
+      "title": "Examen_ASD_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S3_ASD_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ASD_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ASD_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Algorithmique et Structures de Données (ASD)",
+      "category": "EXAMEN",
+      "title": "Examen_ASD_Rattrapage_2021.pdf",
+      "drive_file_id": "FILE_ID_S3_ASD_EXAM_002",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ASD_EXAM_002/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ASD_EXAM_002"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Prog I (Langage C)",
+      "category": "COUR",
+      "title": "Cours_Langage_C_Complet.pdf",
+      "drive_file_id": "FILE_ID_S3_C_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_C_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_C_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Prog I (Langage C)",
+      "category": "TD",
+      "title": "TD_C_Pointeurs_Allocation_Dynamique.pdf",
+      "drive_file_id": "FILE_ID_S3_C_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_C_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_C_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Prog I (Langage C)",
+      "category": "TP",
+      "title": "TP_C_Fichiers_et_Structures.pdf",
+      "drive_file_id": "FILE_ID_S3_C_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_C_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_C_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Prog I (Langage C)",
+      "category": "EXAMEN",
+      "title": "Examen_C_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S3_C_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_C_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_C_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Systèmes d'Exploitation (SE)",
+      "category": "COUR",
+      "title": "Cours_SE_Processus_Memoire_Fichiers.pdf",
+      "drive_file_id": "FILE_ID_S3_SE_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_SE_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_SE_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Systèmes d'Exploitation (SE)",
+      "category": "TD",
+      "title": "TD_SE_Ordonnancement_Deadlocks.pdf",
+      "drive_file_id": "FILE_ID_S3_SE_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_SE_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_SE_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Systèmes d'Exploitation (SE)",
+      "category": "TP",
+      "title": "TP_SE_Processus_Unix_fork_pipe.pdf",
+      "drive_file_id": "FILE_ID_S3_SE_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_SE_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_SE_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Systèmes d'Exploitation (SE)",
+      "category": "EXAMEN",
+      "title": "Examen_SE_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S3_SE_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_SE_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_SE_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Mathématiques pour l'Informatique (Logique & Graphes)",
+      "category": "COUR",
+      "title": "Cours_Logique_Graphes_S3.pdf",
+      "drive_file_id": "FILE_ID_S3_MATH_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_MATH_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_MATH_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Mathématiques pour l'Informatique (Logique & Graphes)",
+      "category": "TD",
+      "title": "TD_Graphes_Dijkstra_Kruskal_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S3_MATH_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_MATH_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_MATH_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Mathématiques pour l'Informatique (Logique & Graphes)",
+      "category": "EXAMEN",
+      "title": "Examen_Logique_Graphes_2021.pdf",
+      "drive_file_id": "FILE_ID_S3_MATH_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_MATH_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_MATH_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Architecture des Ordinateurs",
+      "category": "COUR",
+      "title": "Cours_Architecture_Processeur_Pipeline.pdf",
+      "drive_file_id": "FILE_ID_S3_ARCHI_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ARCHI_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ARCHI_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Architecture des Ordinateurs",
+      "category": "TD",
+      "title": "TD_Architecture_Pipeline_Cache_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S3_ARCHI_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ARCHI_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ARCHI_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S3",
+      "academic_year": "2020-2021",
+      "module": "Architecture des Ordinateurs",
+      "category": "EXAMEN",
+      "title": "Examen_Architecture_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S3_ARCHI_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S3_ARCHI_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S3_ARCHI_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Bases de Données (BD)",
+      "category": "COUR",
+      "title": "Cours_BD_Relationnel_SQL_PLSQL.pdf",
+      "drive_file_id": "FILE_ID_S4_BD_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_BD_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_BD_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Bases de Données (BD)",
+      "category": "TD",
+      "title": "TD_BD_Normalisation_SQL_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S4_BD_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_BD_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_BD_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Bases de Données (BD)",
+      "category": "TP",
+      "title": "TP_BD_Oracle_PLSQL_Triggers.pdf",
+      "drive_file_id": "FILE_ID_S4_BD_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_BD_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_BD_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Bases de Données (BD)",
+      "category": "EXAMEN",
+      "title": "Examen_BD_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S4_BD_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_BD_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_BD_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Bases de Données (BD)",
+      "category": "EXAMEN",
+      "title": "Examen_BD_Rattrapage_2021.pdf",
+      "drive_file_id": "FILE_ID_S4_BD_EXAM_002",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_BD_EXAM_002/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_BD_EXAM_002"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Programmation Orientée Objet (POO — Java)",
+      "category": "COUR",
+      "title": "Cours_POO_Java_Heritage_Polymorphisme.pdf",
+      "drive_file_id": "FILE_ID_S4_POO_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_POO_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_POO_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Programmation Orientée Objet (POO — Java)",
+      "category": "TD",
+      "title": "TD_POO_Java_Interfaces_Collections.pdf",
+      "drive_file_id": "FILE_ID_S4_POO_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_POO_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_POO_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Programmation Orientée Objet (POO — Java)",
+      "category": "TP",
+      "title": "TP_POO_Java_Mini_Projet_Banque.pdf",
+      "drive_file_id": "FILE_ID_S4_POO_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_POO_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_POO_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Programmation Orientée Objet (POO — Java)",
+      "category": "EXAMEN",
+      "title": "Examen_POO_Java_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S4_POO_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_POO_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_POO_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Réseaux Informatiques",
+      "category": "COUR",
+      "title": "Cours_Reseaux_OSI_TCPIP_Protocoles.pdf",
+      "drive_file_id": "FILE_ID_S4_NET_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_NET_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_NET_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Réseaux Informatiques",
+      "category": "TD",
+      "title": "TD_Reseaux_Sous_Reseaux_Routage.pdf",
+      "drive_file_id": "FILE_ID_S4_NET_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_NET_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_NET_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Réseaux Informatiques",
+      "category": "TP",
+      "title": "TP_Reseaux_Cisco_PacketTracer_VLAN.pdf",
+      "drive_file_id": "FILE_ID_S4_NET_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_NET_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_NET_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Réseaux Informatiques",
+      "category": "EXAMEN",
+      "title": "Examen_Reseaux_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S4_NET_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_NET_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_NET_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Théorie des Langages et Compilation (TLC)",
+      "category": "COUR",
+      "title": "Cours_TLC_Automates_Grammaires_Compilation.pdf",
+      "drive_file_id": "FILE_ID_S4_TLC_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_TLC_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_TLC_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Théorie des Langages et Compilation (TLC)",
+      "category": "TD",
+      "title": "TD_TLC_AFD_Grammaires_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S4_TLC_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_TLC_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_TLC_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Théorie des Langages et Compilation (TLC)",
+      "category": "EXAMEN",
+      "title": "Examen_TLC_Session_Normale_2021.pdf",
+      "drive_file_id": "FILE_ID_S4_TLC_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_TLC_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_TLC_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Analyse Numérique",
+      "category": "COUR",
+      "title": "Cours_Analyse_Numerique_Methodes_Resolution.pdf",
+      "drive_file_id": "FILE_ID_S4_AN_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_AN_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_AN_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Analyse Numérique",
+      "category": "TD",
+      "title": "TD_Analyse_Numerique_Newton_Gauss_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S4_AN_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_AN_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_AN_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S4",
+      "academic_year": "2020-2021",
+      "module": "Analyse Numérique",
+      "category": "EXAMEN",
+      "title": "Examen_Analyse_Numerique_2021.pdf",
+      "drive_file_id": "FILE_ID_S4_AN_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S4_AN_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S4_AN_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Technologie Web (TechnoWeb)",
+      "category": "COUR",
+      "title": "Cours_TechnoWeb_HTML5_CSS3_JS_PHP.pdf",
+      "drive_file_id": "FILE_ID_S5_WEB_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_WEB_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_WEB_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Technologie Web (TechnoWeb)",
+      "category": "TD",
+      "title": "TD_Web_JavaScript_DOM_AJAX.pdf",
+      "drive_file_id": "FILE_ID_S5_WEB_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_WEB_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_WEB_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Technologie Web (TechnoWeb)",
+      "category": "TP",
+      "title": "TP_Web_Application_CRUD_PHP_MySQL.pdf",
+      "drive_file_id": "FILE_ID_S5_WEB_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_WEB_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_WEB_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Technologie Web (TechnoWeb)",
+      "category": "EXAMEN",
+      "title": "Examen_TechnoWeb_Session_Normale_2022.pdf",
+      "drive_file_id": "FILE_ID_S5_WEB_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_WEB_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_WEB_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Intelligence Artificielle (IA)",
+      "category": "COUR",
+      "title": "Cours_IA_Recherche_MachineLearning_ReseauxNeurones.pdf",
+      "drive_file_id": "FILE_ID_S5_IA_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_IA_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_IA_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Intelligence Artificielle (IA)",
+      "category": "TD",
+      "title": "TD_IA_Astar_ID3_ReseauxNeurones_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S5_IA_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_IA_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_IA_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Intelligence Artificielle (IA)",
+      "category": "TP",
+      "title": "TP_IA_Scikit_Learn_Classification_Regression.pdf",
+      "drive_file_id": "FILE_ID_S5_IA_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_IA_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_IA_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Intelligence Artificielle (IA)",
+      "category": "EXAMEN",
+      "title": "Examen_IA_Session_Normale_2022.pdf",
+      "drive_file_id": "FILE_ID_S5_IA_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_IA_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_IA_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Génie Logiciel (GL)",
+      "category": "COUR",
+      "title": "Cours_GL_UML_DesignPatterns_Agile.pdf",
+      "drive_file_id": "FILE_ID_S5_GL_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_GL_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_GL_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Génie Logiciel (GL)",
+      "category": "TD",
+      "title": "TD_GL_Diagrammes_UML_Design_Patterns.pdf",
+      "drive_file_id": "FILE_ID_S5_GL_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_GL_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_GL_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Génie Logiciel (GL)",
+      "category": "EXAMEN",
+      "title": "Examen_GL_Session_Normale_2022.pdf",
+      "drive_file_id": "FILE_ID_S5_GL_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_GL_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_GL_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Probabilités et Statistiques pour l'Informatique",
+      "category": "COUR",
+      "title": "Cours_Proba_Stats_Lois_Tests_Markov.pdf",
+      "drive_file_id": "FILE_ID_S5_STAT_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_STAT_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_STAT_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Probabilités et Statistiques pour l'Informatique",
+      "category": "TD",
+      "title": "TD_Proba_Stats_Intervalle_Confiance_Tests.pdf",
+      "drive_file_id": "FILE_ID_S5_STAT_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_STAT_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_STAT_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S5",
+      "academic_year": "2021-2022",
+      "module": "Probabilités et Statistiques pour l'Informatique",
+      "category": "EXAMEN",
+      "title": "Examen_Proba_Stats_Session_Normale_2022.pdf",
+      "drive_file_id": "FILE_ID_S5_STAT_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S5_STAT_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S5_STAT_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Sécurité Informatique",
+      "category": "COUR",
+      "title": "Cours_Securite_Cryptographie_Protocoles.pdf",
+      "drive_file_id": "FILE_ID_S6_SEC_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_SEC_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_SEC_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Sécurité Informatique",
+      "category": "TD",
+      "title": "TD_Securite_RSA_AES_Attaques_Exercices.pdf",
+      "drive_file_id": "FILE_ID_S6_SEC_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_SEC_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_SEC_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Sécurité Informatique",
+      "category": "TP",
+      "title": "TP_Securite_Kali_Linux_Pentest_Wireshark.pdf",
+      "drive_file_id": "FILE_ID_S6_SEC_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_SEC_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_SEC_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Sécurité Informatique",
+      "category": "EXAMEN",
+      "title": "Examen_Securite_Session_Normale_2022.pdf",
+      "drive_file_id": "FILE_ID_S6_SEC_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_SEC_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_SEC_EXAM_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Sécurité Informatique",
+      "category": "EXAMEN",
+      "title": "Examen_Securite_Rattrapage_2022.pdf",
+      "drive_file_id": "FILE_ID_S6_SEC_EXAM_002",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_SEC_EXAM_002/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_SEC_EXAM_002"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Systèmes Distribués et Cloud Computing",
+      "category": "COUR",
+      "title": "Cours_SysDistrib_Docker_Kubernetes_Cloud.pdf",
+      "drive_file_id": "FILE_ID_S6_DIST_COUR_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_DIST_COUR_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_DIST_COUR_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Systèmes Distribués et Cloud Computing",
+      "category": "TD",
+      "title": "TD_SysDistrib_CAP_NoSQL_Microservices.pdf",
+      "drive_file_id": "FILE_ID_S6_DIST_TD_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_DIST_TD_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_DIST_TD_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Systèmes Distribués et Cloud Computing",
+      "category": "TP",
+      "title": "TP_Cloud_Docker_Compose_AWS_Deployment.pdf",
+      "drive_file_id": "FILE_ID_S6_DIST_TP_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_DIST_TP_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_DIST_TP_001"
+    },
+    {
+      "major": "Génie Informatique",
+      "semester": "S6",
+      "academic_year": "2021-2022",
+      "module": "Systèmes Distribués et Cloud Computing",
+      "category": "EXAMEN",
+      "title": "Examen_SysDistrib_Session_Normale_2022.pdf",
+      "drive_file_id": "FILE_ID_S6_DIST_EXAM_001",
+      "embed_url": "https://drive.google.com/file/d/FILE_ID_S6_DIST_EXAM_001/preview",
+      "download_url": "https://drive.google.com/uc?export=download&id=FILE_ID_S6_DIST_EXAM_001"
+    }
+  ]
+}
